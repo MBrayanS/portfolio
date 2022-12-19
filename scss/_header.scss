@@ -1,3 +1,9 @@
+.text-style {
+    margin-bottom: 3.5rem;
+    text-shadow: .4rem .2rem .4rem $cor-tema-padrao;
+    transition: all .5s ease;
+}
+
 header {
     width: 100%;
     height: 100vh;
