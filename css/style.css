@@ -3,11 +3,104 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
+.no-animation {
+  animation: none !important;
+}
+
+.sidebar--show {
+  animation: show-menu 0.7s ease forwards !important;
+}
+
+.sidebar {
+  width: 24rem;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  transition: all 2s;
+  right: -20rem;
+  top: 0;
+  animation: show-menu-rev 0.7s ease forwards;
+}
+.sidebar .btn-hamburguer {
+  background-color: #ece6f3;
+  width: 4rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50% 0 0 50%;
+  padding: 1rem 0;
+  cursor: pointer;
+  z-index: 1001;
+}
+.sidebar .btn-hamburguer:hover .line {
+  transition: all 0.5s ease;
+  background-color: #AB7BE0;
+}
+.sidebar .btn-hamburguer .line {
+  background-color: #652AA8;
+  width: 2.5rem;
+  height: 0.4rem;
+  border-radius: 2px;
+  box-shadow: 0 0 0.3rem #8236D9;
+  margin-left: 1rem;
+}
+.sidebar nav {
+  width: 20rem;
+  position: relative;
+  background-color: #ece6f3;
+}
+.sidebar .menu {
+  width: 20rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sidebar .menu .menu-item {
+  font-size: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  align-self: center;
+}
+.sidebar .menu .menu-item a {
+  color: #652AA8;
+  text-shadow: 0.2rem 0.1rem 0.3rem #8236D9;
+}
+.sidebar .menu .menu-item a:hover {
+  color: #361659;
+  text-shadow: 0.2rem 0.1rem 0.3rem #3D225C;
+}
+
+@keyframes show-menu {
+  0% {
+    right: -20rem;
+  }
+  100% {
+    right: 0rem;
+  }
+}
+@keyframes show-menu-rev {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -20rem;
+  }
+}
 @keyframes show-banner-right {
   0% {
     transform: translateX(50rem);
+    opacity: 0;
   }
   20% {
     opacity: 0;
@@ -20,6 +113,7 @@
 @keyframes show-banner-up {
   0% {
     transform: translateY(10rem);
+    opacity: 0;
   }
   20% {
     opacity: 0;
@@ -61,34 +155,34 @@ header {
 .banner h1 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 3.5rem;
-  animation: show-banner-right 1s ease forwards;
-  opacity: 0;
+  animation: show-banner-right 1s ease;
+  transform: none;
 }
 .banner p {
   font-family: "Press Start 2P", cursive;
   font-size: 1.8rem;
   cursor: pointer;
-  animation: show-banner-right 1.5s ease forwards;
-  opacity: 0;
+  animation: show-banner-right 1.5s ease;
+  transform: none;
 }
 .banner p:hover {
   color: #AB7BE0;
   transform: translateY(-5px);
 }
 .banner button {
-  background-color: #AB7BE0;
+  background-color: #8236D9;
   width: 12rem;
   height: 4rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
   box-shadow: 0.2rem 0.2rem 0.8rem #8236D9;
   border: none;
   border-radius: 5px;
   margin-left: 3rem;
   transition: all 0.5s ease;
+  transform: none;
+  animation: show-banner-up 2s ease;
   cursor: pointer;
-  animation: show-banner-up 2s ease forwards;
-  opacity: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .banner button:hover {
   color: #fff;
