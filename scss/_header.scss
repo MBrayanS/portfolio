@@ -1,11 +1,3 @@
-@mixin hover-text-up ($cor,$bg-cor){
-    &:hover{
-        color: $cor;
-        transform: translateY(-5px);
-        @if $bg-cor != none { background-color: $bg-cor; } 
-    };
-}
-
 @keyframes show-banner-right {
     0% { transform: translateX(50rem); }
     20% { opacity: 0;}
@@ -58,7 +50,6 @@ header {
 
     p {
         @extend .text-style;
-        @include hover-text-up ($cor-tema-secundaria, none);
 
         font-family: $fonte-legal;
         font-size: 1.8rem;
@@ -68,9 +59,7 @@ header {
     }
 
     button {
-        @include hover-text-up(#fff, $cor-tema-secundaria);
-
-        background-color: $cor-tema-secundaria;
+        background-color: $cor-tema-padrao;
         width: 12rem;
         height: 4rem;
         font-size: 1.5rem;
