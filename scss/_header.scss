@@ -1,11 +1,11 @@
 @keyframes show-banner-right {
-    0% { transform: translateX(50rem); }
+    0% { transform: translateX(50rem); opacity: 0;}
     20% { opacity: 0;}
     100% { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes show-banner-up {
-    0% { transform: translateY(10rem); }
+    0% { transform: translateY(10rem); opacity: 0; }
     20% { opacity: 0;}
     100% { transform: translateY(0); opacity: 1; }
 }
@@ -44,8 +44,8 @@ header {
 
         font-family: $fonte-padrao;
         font-size: 3.5rem;
-        animation: show-banner-right 1s ease forwards;
-        opacity: 0;
+        animation: show-banner-right 1s ease;
+        transform: none;
     }
 
     p {
@@ -54,23 +54,34 @@ header {
         font-family: $fonte-legal;
         font-size: 1.8rem;
         cursor: pointer;
-        animation: show-banner-right 1.5s ease forwards;
-        opacity: 0;
+        animation: show-banner-right 1.5s ease;
+        transform: none;
+
+        &:hover{
+            color: $cor-tema-secundaria;
+            transform: translateY(-5px);
+        };
     }
 
     button {
         background-color: $cor-tema-padrao;
         width: 12rem;
         height: 4rem;
-        font-size: 1.5rem;
-        text-transform: uppercase;
         box-shadow: .2rem .2rem .8rem $cor-tema-padrao;
         border: none;
         border-radius: 5px;
         margin-left: 3rem;
         transition: all .5s ease;
+        transform: none;
+        animation: show-banner-up 2s ease;
         cursor: pointer;
-        animation: show-banner-up 2s ease forwards;
-        opacity: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+        &:hover{
+            color: #fff;
+            transform: translateY(-5px);
+            background-color: $cor-tema-secundaria; 
+        };
     }
 }
