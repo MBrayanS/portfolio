@@ -1,3 +1,23 @@
+@mixin hover-text-up ($cor,$bg-cor){
+    &:hover{
+        color: $cor;
+        transform: translateY(-5px);
+        @if $bg-cor != none { background-color: $bg-cor; } 
+    };
+}
+
+@keyframes show-banner-right {
+    0% { transform: translateX(50rem); }
+    20% { opacity: 0;}
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes show-banner-up {
+    0% { transform: translateY(10rem); }
+    20% { opacity: 0;}
+    100% { transform: translateY(0); opacity: 1; }
+}
+
 .text-style {
     margin-bottom: 3.5rem;
     text-shadow: .4rem .2rem .4rem $cor-tema-padrao;
