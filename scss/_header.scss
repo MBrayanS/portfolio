@@ -49,20 +49,27 @@ header {
     
     h1 {
         @extend .text-style;
+
         font-family: $fonte-padrao;
         font-size: 3.5rem;
+        animation: show-banner-right 1s ease forwards;
+        opacity: 0;
     }
 
     p {
         @extend .text-style;
+        @include hover-text-up ($cor-tema-secundaria, none);
+
         font-family: $fonte-legal;
         font-size: 1.8rem;
         cursor: pointer;
-
-        @include slide-up($cor-tema-secundaria, none);
+        animation: show-banner-right 1.5s ease forwards;
+        opacity: 0;
     }
 
     button {
+        @include hover-text-up(#fff, $cor-tema-secundaria);
+
         background-color: $cor-tema-secundaria;
         width: 12rem;
         height: 4rem;
@@ -74,7 +81,7 @@ header {
         margin-left: 3rem;
         transition: all .5s ease;
         cursor: pointer;
-
-        @include slide-up(#fff, $cor-tema-secundaria);
+        animation: show-banner-up 2s ease forwards;
+        opacity: 0;
     }
 }
