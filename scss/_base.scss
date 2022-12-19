@@ -18,10 +18,18 @@ $cor-tema5: #361659;
 // | | 'BM Plex Mono' 300 italic
 // | | 'BM Plex Mono' 500 medium
 // | | 'BM Plex Mono' 700 bold
+// | | 'Fredoka One'
+// | | 'Press Start 2P'
 
-//font-family: 'Fredoka One', cursive;
-//font-family: 'IBM Plex Mono', monospace;
-//font-family: 'Press Start 2P', cursive;
+//extends
+
+@mixin slide-up ($cor,$bg-cor){
+    &:hover{
+        color: $cor;
+        transform: translateY(-5px);
+        @if $bg-cor != none { background-color: $bg-cor; } 
+    };
+}
 
 *{
     margin: 0;
