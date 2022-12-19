@@ -9,15 +9,46 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
+}
 
-    .img-wrapper {
-        width: 100%;
-        height: 100%;
-        
-        img {   
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.img-wrapper {
+    img { object-fit: cover; }
+}
+
+.banner {
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+    h1 {
+        @extend .text-style;
+        font-family: $fonte-padrao;
+        font-size: 3.5rem;
+    }
+
+    p {
+        @extend .text-style;
+        font-family: $fonte-legal;
+        font-size: 1.8rem;
+        cursor: pointer;
+
+        @include slide-up($cor-tema-secundaria, none);
+    }
+
+    button {
+        background-color: $cor-tema-secundaria;
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        box-shadow: .2rem .2rem .8rem $cor-tema-padrao;
+        border: none;
+        border-radius: 5px;
+        margin-left: 3rem;
+        transition: all .5s ease;
+        cursor: pointer;
+
+        @include slide-up(#fff, $cor-tema-secundaria);
     }
 }
