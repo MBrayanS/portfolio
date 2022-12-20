@@ -3,8 +3,8 @@
     display: flex;
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 1001;
+    right: -20rem;
+    transition: all .5s ease;
 
     .hamburguer{
         @extend .centralizar-conteudo;
@@ -12,9 +12,10 @@
         width: 5rem;
         height: 5rem;
         position: relative;
-        right: -5rem;
+        right: 0;
         border-radius: 50% 0 0 50%;
         margin-top: .5rem;
+        transition: all .5s ease;
         cursor: pointer;
 
         .hamburguer_btn{
@@ -54,7 +55,7 @@
             font-weight: 700;
             color: $cor-tema3;
             text-shadow: .2rem .1rem 0.3rem $cor-tema-padrao;
-
+            
             a:hover{
                 color: $cor-tema5;
                 text-shadow: .2rem .1rem 0.3rem $cor-tema4;
@@ -64,5 +65,12 @@
                 margin: 3rem 0;
             }
         }
+    }
+}
+
+.sidebar--show {
+    right: 0;
+    .hamburguer {
+        right: -5rem;
     }
 }
