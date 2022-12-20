@@ -1,3 +1,3 @@
-$('.btn-hamburguer').click(function(){
+$('.hamburguer_btn').click(function(){
     $('.sidebar').toggleClass('sidebar--show')
 });
