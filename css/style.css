@@ -7,94 +7,89 @@
   text-decoration: none;
 }
 
-.no-animation {
-  animation: none !important;
-}
-
-.sidebar--show {
-  animation: show-menu 0.7s ease forwards !important;
+.centralizar-conteudo, .sidebar .menu, .sidebar .hamburguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
-  width: 24rem;
-  height: 100vh;
+  width: max-content;
   display: flex;
   position: fixed;
-  transition: all 2s;
-  right: -20rem;
   top: 0;
-  animation: show-menu-rev 0.7s ease forwards;
+  right: -20rem;
+  transition: all 0.5s ease;
 }
-.sidebar .btn-hamburguer {
+.sidebar .hamburguer {
   background-color: #ece6f3;
-  width: 4rem;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  right: 0rem;
+  border-radius: 50% 0 0 50%;
+  margin-top: 0.5rem;
+  transition: all 0.5s ease;
+  animation: slide-left 2s ease;
+  cursor: pointer;
+}
+.sidebar .hamburguer .hamburguer_btn {
+  width: 3rem;
   height: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 50% 0 0 50%;
-  padding: 1rem 0;
-  cursor: pointer;
-  z-index: 1001;
+  justify-content: space-between;
+  margin-left: 0.5rem;
 }
-.sidebar .btn-hamburguer:hover .line {
-  transition: all 0.5s ease;
-  background-color: #AB7BE0;
+.sidebar .hamburguer .hamburguer_btn:hover .line {
+  transition: all 0.4s ease;
+  background-color: #361659;
+  text-shadow: 0.2rem 0.1rem 0.3rem #3D225C;
 }
-.sidebar .btn-hamburguer .line {
+.sidebar .hamburguer .line {
   background-color: #652AA8;
-  width: 2.5rem;
-  height: 0.4rem;
+  width: 100%;
+  height: 0.5rem;
   border-radius: 2px;
   box-shadow: 0 0 0.3rem #8236D9;
-  margin-left: 1rem;
-}
-.sidebar nav {
-  width: 20rem;
-  position: relative;
-  background-color: #ece6f3;
 }
 .sidebar .menu {
+  background-color: #ece6f3;
   width: 20rem;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100vh;
 }
-.sidebar .menu .menu-item {
+.sidebar .menu ul {
+  text-align: center;
   font-size: 2rem;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
-  align-self: center;
-}
-.sidebar .menu .menu-item a {
   color: #652AA8;
   text-shadow: 0.2rem 0.1rem 0.3rem #8236D9;
 }
-.sidebar .menu .menu-item a:hover {
+.sidebar .menu ul a:hover {
   color: #361659;
   text-shadow: 0.2rem 0.1rem 0.3rem #3D225C;
 }
-
-@keyframes show-menu {
-  0% {
-    right: -20rem;
-  }
-  100% {
-    right: 0rem;
-  }
+.sidebar .menu ul li {
+  margin: 3rem 0;
 }
-@keyframes show-menu-rev {
-  0% {
-    right: 0;
+
+.sidebar--show {
+  right: 0;
+}
+.sidebar--show .hamburguer {
+  right: -5rem;
+}
+
+@keyframes slide-left {
+  from {
+    right: -5rem;
+    opacity: 0;
   }
-  100% {
-    right: -20rem;
+  to {
+    right: 0;
+    opacity: 1;
   }
 }
 @keyframes show-banner-right {
