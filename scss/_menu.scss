@@ -5,19 +5,20 @@
     top: 0;
     right: -20rem;
     transition: all .5s ease;
-
+    
     .hamburguer{
         @extend .centralizar-conteudo;
         background-color: $cor-tema-secundaria-light;
         width: 5rem;
         height: 5rem;
         position: relative;
-        right: 0;
+        right: 0rem;
         border-radius: 50% 0 0 50%;
         margin-top: .5rem;
         transition: all .5s ease;
+        animation: slide-left 2s ease;
         cursor: pointer;
-
+        
         .hamburguer_btn{
             width: 3rem;
             height: 2.5rem;
@@ -32,7 +33,7 @@
                 text-shadow: .2rem .1rem 0.3rem $cor-tema4;
             }
         }
-
+        
         .line {
             background-color: $cor-tema3;
             width: 100%;
@@ -41,13 +42,13 @@
             box-shadow: 0 0 .3rem $cor-tema-padrao;
         }
     }
-
+    
     .menu {
         @extend .centralizar-conteudo;
         background-color: $cor-tema-secundaria-light;
         width: 20rem;
         height: 100vh;
-
+        
         ul {
             text-align: center;
             font-size: 2rem;
@@ -73,4 +74,9 @@
     .hamburguer {
         right: -5rem;
     }
+}
+
+@keyframes slide-left {
+    from { right: -5rem; opacity: 0;}
+    to { right: 0; opacity: 1; }
 }
