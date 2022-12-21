@@ -1,3 +1,5 @@
-$('.hamburguer_btn').click(function(){
-    $('.sidebar').toggleClass('sidebar--show')
-});
+import handleSkills from './skills.js' 
+
+$('.hamburguer_btn').click( ()=> $('.sidebar').toggleClass('sidebar--show') );
+
+handleSkills()
