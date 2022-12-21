@@ -38,3 +38,17 @@ $cor-tema5: #361659;
     justify-content: center;
     align-items: center;
 }
+
+.section_title {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15vh;
+        
+    h1 {
+        width: max-content;
+        border-bottom: .3rem solid $cor-tema3;
+        margin: 0 auto;
+        font-family: $fonte-padrao;
+        font-size: 3rem;
+    }
+}
