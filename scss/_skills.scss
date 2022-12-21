@@ -1,18 +1,8 @@
 .skills-section{
-    background-color: $cor-tema-padrao-light;
-    width: 100%;
-    height: max-content;
-    margin: 0 auto;
-    padding: 10vh 0 15vh;
+    @extend .section;
 
     .skills_container {
-        width: 90%;
-        height: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3rem 2rem;
-        margin: 0 auto;
+        @extend .section_container;
 
         .skills_item {
             width: 15rem;
