@@ -49,7 +49,6 @@ function skillElementConstructor({ iconClass, name, pContent }){
     div.append(icon)
     div.append(h3)
     div.append(pElement)
-    console.log(h3)
 
     $('.skills_container').append(div);
 }
