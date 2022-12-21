@@ -1,0 +1,17 @@
+.projects-section{
+    @extend .section;
+
+    .projects_container{
+        @extend .section_container;
+        gap: 2.5rem 1rem;
+
+        .projects-card{
+            width: 15rem;
+            height: 20rem;
+            margin: 0 auto;
+            box-shadow: 0 0  1rem $cor-tema-padrao;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+    }
+}
