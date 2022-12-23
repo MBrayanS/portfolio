@@ -7,14 +7,14 @@
   text-decoration: none;
 }
 
-.centralizar-conteudo, .sidebar .menu, .sidebar .hamburguer {
+.sidebar_menu, .sidebar_hamburguer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.section, .projects-section, .skills-section {
+.projects, .skills {
   background-color: #e7d3ff;
   width: 100%;
   height: max-content;
@@ -22,12 +22,12 @@
   padding: 10vh 0 15vh;
 }
 
-.section_title {
+.projects_title, .skills_title {
   width: 100%;
   height: 100%;
   padding-bottom: 15vh;
 }
-.section_title h1 {
+.projects_title h1, .skills_title h1 {
   width: max-content;
   border-bottom: 0.3rem solid #652AA8;
   margin: 0 auto;
@@ -35,7 +35,7 @@
   font-size: 3rem;
 }
 
-.section_container, .projects-section .projects_container, .skills-section .skills_container {
+.projects_container, .skills_container {
   width: 90%;
   height: 100%;
   max-width: 100%;
@@ -43,116 +43,6 @@
   flex-wrap: wrap;
   gap: 3rem 2rem;
   margin: 0 auto;
-}
-
-.sidebar {
-  width: max-content;
-  display: flex;
-  position: fixed;
-  top: 0;
-  right: -20rem;
-  transition: all 0.5s ease;
-}
-.sidebar .hamburguer {
-  background-color: #ece6f3;
-  width: 5rem;
-  height: 5rem;
-  position: relative;
-  right: 0rem;
-  border-radius: 50% 0 0 50%;
-  margin-top: 0.5rem;
-  transition: all 0.5s ease;
-  animation: slide-left 2s ease;
-  cursor: pointer;
-}
-.sidebar .hamburguer .hamburguer_btn {
-  width: 3rem;
-  height: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 0.5rem;
-}
-.sidebar .hamburguer .hamburguer_btn:hover .line {
-  transition: all 0.4s ease;
-  background-color: #361659;
-  text-shadow: 0.2rem 0.1rem 0.3rem #3D225C;
-}
-.sidebar .hamburguer .line {
-  background-color: #652AA8;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 2px;
-  box-shadow: 0 0 0.3rem #8236D9;
-}
-.sidebar .menu {
-  background-color: #ece6f3;
-  width: 20rem;
-  height: 100vh;
-}
-.sidebar .menu ul {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 700;
-  color: #652AA8;
-  text-shadow: 0.2rem 0.1rem 0.3rem #8236D9;
-}
-.sidebar .menu ul a:hover {
-  color: #361659;
-  text-shadow: 0.2rem 0.1rem 0.3rem #3D225C;
-}
-.sidebar .menu ul li {
-  margin: 3rem 0;
-}
-
-.sidebar--show {
-  right: 0;
-}
-.sidebar--show .hamburguer {
-  right: -5rem;
-}
-
-@keyframes slide-left {
-  from {
-    right: -5rem;
-    opacity: 0;
-  }
-  to {
-    right: 0;
-    opacity: 1;
-  }
-}
-@keyframes show-banner-right {
-  0% {
-    transform: translateX(50rem);
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes show-banner-up {
-  0% {
-    transform: translateY(10rem);
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.text-style, .banner p, .banner h1 {
-  margin-bottom: 3.5rem;
-  text-shadow: 0.4rem 0.2rem 0.4rem #8236D9;
-  transition: all 0.5s ease;
 }
 
 header {
@@ -178,6 +68,10 @@ header {
   top: 30%;
   left: 10%;
 }
+.banner h1, .banner p {
+  text-shadow: 0.4rem 0.2rem 0.4rem #8236D9;
+  margin-bottom: 3.5rem;
+}
 .banner h1 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 3.5rem;
@@ -190,6 +84,7 @@ header {
   cursor: pointer;
   animation: show-banner-right 1.5s ease;
   transform: none;
+  transition: all 0.5s ease;
 }
 .banner p:hover {
   color: #AB7BE0;
@@ -216,7 +111,126 @@ header {
   background-color: #AB7BE0;
 }
 
-.skills-section .skills_container .skills_item {
+@keyframes show-banner-right {
+  0% {
+    transform: translateX(50rem);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes show-banner-up {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.sidebar {
+  width: max-content;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  transition: all 0.5s ease;
+}
+
+.sidebar--show {
+  right: 0;
+}
+.sidebar--show .sidebar_hamburguer {
+  right: -5rem;
+}
+
+.sidebar_hamburguer {
+  background-color: #ece6f3;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  right: 0rem;
+  border-radius: 50% 0 0 50%;
+  margin-top: 0.5rem;
+  transition: all 0.5s ease;
+  animation: slide-left 1s ease;
+  cursor: pointer;
+}
+
+.hamburguer_btn {
+  width: 3rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+.hamburguer_btn:hover .line {
+  transition: all 0.4s ease;
+  background-color: #361659;
+  text-shadow: 0.2rem 0.1rem 0.3rem #3D225C;
+}
+
+.hamburguer_btn.hamburguer_btn--rotate {
+  transform: rotate(-90deg);
+}
+
+.line {
+  background-color: #652AA8;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 2px;
+  box-shadow: 0 0 0.3rem #8236D9;
+}
+
+.sidebar_menu {
+  background-color: #ece6f3;
+  width: 20rem;
+  height: 100vh;
+}
+
+.menu_lista {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  color: #652AA8;
+  text-shadow: 0.2rem 0.1rem 0.3rem #8236D9;
+}
+.menu_lista li {
+  margin: 3rem 0;
+}
+
+.menu_link {
+  color: inherit;
+}
+.menu_link:hover {
+  color: #361659;
+  text-shadow: 0.2rem 0.1rem 0.3rem #3D225C;
+}
+
+@keyframes slide-left {
+  from {
+    right: -5rem;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.skills_item {
   width: 15rem;
   height: auto;
   display: grid;
@@ -227,18 +241,18 @@ header {
   border-radius: 10px;
   padding: 1rem;
 }
-.skills-section .skills_container .skills_item i {
+.skills_item i {
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 2.5rem;
 }
-.skills-section .skills_container .skills_item h3 {
+.skills_item h3 {
   grid-column: 2/3;
   grid-row: 1/2;
   margin: auto 0;
   padding-left: 1rem;
 }
-.skills-section .skills_container .skills_item p {
+.skills_item p {
   height: max-content;
   grid-column: 1/6;
   grid-row: 3/4;
@@ -248,10 +262,11 @@ header {
   padding: 1rem;
 }
 
-.projects-section .projects_container {
+.projects_container {
   gap: 2.5rem 1rem;
 }
-.projects-section .projects_container .projects-card {
+
+.projects_card {
   width: 15rem;
   height: 20rem;
   margin: 0 auto;
