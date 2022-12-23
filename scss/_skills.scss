@@ -1,8 +1,8 @@
 .skills-section{
-    @extend .section;
+    @extend %section;
 
     .skills_container {
-        @extend .section_container;
+        @extend %section_container;
 
         .skills_item {
             width: 15rem;

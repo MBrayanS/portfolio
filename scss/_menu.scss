@@ -7,7 +7,7 @@
     transition: all .5s ease;
     
     .hamburguer{
-        @extend .centralizar-conteudo;
+        @extend %centralizar-conteudo;
         background-color: $cor-tema-secundaria-light;
         width: 5rem;
         height: 5rem;
@@ -46,7 +46,7 @@
     }
     
     .menu {
-        @extend .centralizar-conteudo;
+        @extend %centralizar-conteudo;
         background-color: $cor-tema-secundaria-light;
         width: 20rem;
         height: 100vh;

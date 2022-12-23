@@ -1,11 +1,11 @@
-.centralizar-conteudo {
+%centralizar-conteudo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section {
+%section {
     background-color: $cor-tema-padrao-light;
     width: 100%;
     height: max-content;
@@ -13,7 +13,7 @@
     padding: 10vh 0 15vh;
 }
 
-.section_title {
+%section_title {
     width: 100%;
     height: 100%;
     padding-bottom: 15vh;
@@ -27,7 +27,7 @@
     }
 }
 
-.section_container {
+%section_container {
     width: 90%;
     height: 100%;
     max-width: 100%;
