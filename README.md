@@ -14,6 +14,7 @@ Atualmente estou iniciando na área da programação, puxando para o lado front-
 
 # Meus principais projetos
 
+ - [Portfólio](https://mbrayans.vercel.app/)
  - [Lading page de produtos](https://github.com/MBrayanS/Landing-page-para-venda-de-headphones)
  - [Lista de catálogos](https://github.com/MBrayanS/Minha-lista-de-catalogos)
  - [Game of life](https://github.com/MBrayanS/Game-of-life)
