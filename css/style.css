@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 
-.sidebar_menu, .sidebar_hamburguer {
+.card_anchor, .card_info, .sidebar_menu, .sidebar_hamburguer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +35,7 @@
   font-size: 3rem;
 }
 
-.projects_container, .skills_container {
+.skills_container {
   width: 90%;
   height: 100%;
   max-width: 100%;
@@ -144,6 +144,7 @@ header {
   top: 0;
   right: -20rem;
   transition: all 0.5s ease;
+  z-index: 1001;
 }
 
 .sidebar--show {
@@ -262,17 +263,77 @@ header {
   padding: 1rem;
 }
 
+.card_info, .card_bg-img img, .card_bg-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
 .projects_container {
-  gap: 2.5rem 1rem;
+  max-width: 90%;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
+  margin: 0 auto;
+  gap: 2rem;
 }
 
 .projects_card {
-  width: 15rem;
-  height: 20rem;
-  margin: 0 auto;
+  width: 18rem;
+  height: 30rem;
+  transition: all 0.5s;
   box-shadow: 0 0 1rem #8236D9;
   border-radius: 10px;
-  padding: 1rem;
+}
+.projects_card:hover {
+  transform: scale(1.1);
+}
+.projects_card:hover img {
+  opacity: 0.2;
+}
+
+.card_bg-img {
+  background-color: #000;
+}
+.card_bg-img img {
+  opacity: 0.1;
+}
+
+.card_info {
+  justify-content: end;
+  position: relative;
+  top: -100%;
+}
+.card_info h3 {
+  color: #8236D9;
+  text-align: center;
+  text-shadow: 0 0 0.5rem black;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.8rem;
+}
+.card_info div {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0 1.5rem;
+}
+
+.card_anchor {
+  background-color: #8236D9;
+  color: #ece6f3;
+  width: 12rem;
+  height: 3.5rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem #8236D9;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  transition: all 0.5s;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.card_anchor:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
