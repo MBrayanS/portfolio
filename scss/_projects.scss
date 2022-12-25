@@ -1,3 +1,12 @@
+$card-width: 18rem;
+
+%card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
 .projects {
     @extend %section;
 }
@@ -7,15 +16,76 @@
 }
 
 .projects_container {
-    @extend %section_container;
-    gap: 2.5rem 1rem;
+    max-width: 90%;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($card-width, $card-width));
+    margin: 0 auto;
+    gap: 2rem;
 }
 
 .projects_card {
-    width: 15rem;
-    height: 20rem;
-    margin: 0 auto;
-    box-shadow: 0 0  1rem $cor-tema-padrao;
+    width: $card-width;
+    height: 30rem;
+    transition: all .5s;
+    box-shadow: 0 0 1rem $cor-tema-padrao;
     border-radius: 10px;
-    padding: 1rem;
+
+    &:hover {
+        transform: scale(1.1);
+
+        img { opacity: .2; }
+    }
+}
+
+.card_bg-img {
+    @extend %card;
+    background-color: #000;
+
+    img {
+        @extend %card;
+        opacity: .1;
+    }
+}
+
+.card_info {
+    @extend %card;
+    @extend %centralizar-conteudo;
+    justify-content: end;
+    position: relative;
+    top: -100%;
+
+    h3 {
+        color: $cor-tema-padrao;
+        text-align: center;
+        text-shadow: 0 0 .5rem black;
+        font-family: $fonte-legal;
+        font-size: 1.8rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0 1.5rem;
+    }
+}
+
+.card_anchor {
+    @extend %centralizar-conteudo;
+    background-color: $cor-tema-padrao;
+    color: $cor-tema-secundaria-light;
+    width: 12rem;
+    height: 3.5rem;
+    box-shadow: .2rem .2rem .8rem $cor-tema-padrao;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    transition: all .5s;
+    font-family: $fonte-padrao;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:hover{
+        transform: scale(1.2);
+    }
 }
