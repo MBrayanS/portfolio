@@ -88,4 +88,10 @@ $card-width: 18rem;
     &:hover{
         transform: scale(1.2);
     }
+
+    &:active{
+        background-color: $cor-tema3; 
+        box-shadow: .2rem 0 .8rem $cor-tema-padrao;
+        transform: translateY(5px) scale(1.15);
+    }
 }
