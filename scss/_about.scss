@@ -7,12 +7,8 @@
 }
 
 .about_container {
-    width: 90%;
-    height: max-content;
-    margin: 0 auto 3rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 3rem;
+    @extend %section_container;
+    flex-wrap: nowrap;
 }
 
 .about_perfil {
