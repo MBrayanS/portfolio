@@ -7,14 +7,14 @@
   text-decoration: none;
 }
 
-.card_anchor, .card_info, .sidebar_menu, .sidebar_hamburguer {
+.midia_item p, .midia_item, .midia-social, .about_perfil, .card_anchor, .card_info, .sidebar_menu, .sidebar_hamburguer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.projects, .skills {
+.contact, .about, .projects, .skills {
   background-color: #e7d3ff;
   width: 100%;
   height: max-content;
@@ -22,12 +22,12 @@
   padding: 10vh 0 15vh;
 }
 
-.projects_title, .skills_title {
+.contact_title, .about_title, .projects_title, .skills_title {
   width: 100%;
   height: 100%;
   padding-bottom: 15vh;
 }
-.projects_title h1, .skills_title h1 {
+.contact_title h1, .about_title h1, .projects_title h1, .skills_title h1 {
   width: max-content;
   border-bottom: 0.3rem solid #652AA8;
   margin: 0 auto;
@@ -35,7 +35,7 @@
   font-size: 3rem;
 }
 
-.skills_container {
+.contact_container, .about_container, .skills_container {
   width: 90%;
   height: 100%;
   max-width: 100%;
@@ -98,17 +98,30 @@ header {
   border: none;
   border-radius: 5px;
   margin-left: 3rem;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   transform: none;
   animation: show-banner-up 2s ease;
   cursor: pointer;
-  font-size: 1.5rem;
+}
+.banner button a {
   text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #e7d3ff;
 }
 .banner button:hover {
-  color: #fff;
-  transform: translateY(-5px);
   background-color: #AB7BE0;
+  transform: scale(1.05);
+}
+.banner button:hover a {
+  color: #361659;
+}
+.banner button:active {
+  background-color: #652AA8;
+  box-shadow: 0.2rem 0 0.8rem #8236D9;
+  transform: translateY(5px) scale(1.05);
+}
+.banner button:active a {
+  color: #e7d3ff;
 }
 
 @keyframes show-banner-right {
@@ -334,6 +347,102 @@ header {
 }
 .card_anchor:hover {
   transform: scale(1.2);
+}
+.card_anchor:active {
+  background-color: #652AA8;
+  box-shadow: 0.2rem 0 0.8rem #8236D9;
+  transform: translateY(5px) scale(1.15);
+}
+
+.about_container {
+  flex-wrap: nowrap;
+}
+
+.about_perfil img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 0.2rem solid #361659;
+  box-shadow: 0 0 1.5rem #8236D9;
+  margin: auto;
+}
+
+.about_resume {
+  color: #361659;
+  background-color: #AB7BE0;
+  box-shadow: 0 0 1rem #8236D9;
+  border-radius: 10px;
+  padding: 5rem;
+}
+.about_resume h3 {
+  margin-bottom: 3rem;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+.about_resume p {
+  color: #ece6f3;
+  text-align: justify;
+  text-indent: 3rem;
+  text-shadow: 1px 1px 2px #361659;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.5rem;
+}
+
+.contact_container {
+  min-height: 50vh;
+}
+
+.midia-social {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.midia_item {
+  background-color: #AB7BE0;
+  width: 5rem;
+  height: 5rem;
+  flex-direction: row;
+  border: 2px solid #361659;
+  border-radius: 20px;
+  box-shadow: 0 0 0.5rem #8236D9;
+  margin: 2rem 3rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.midia_item:active, .midia_item:hover {
+  width: 30rem;
+  background-color: #361659;
+  transform: scale(1.1);
+  padding: 0 1rem;
+}
+.midia_item:active i, .midia_item:hover i {
+  color: #ece6f3;
+  transform: translateX(12rem) rotate(360deg);
+}
+.midia_item:active p, .midia_item:hover p {
+  transform: scale(1);
+  opacity: 1;
+}
+.midia_item i {
+  font-size: 4rem;
+  color: #361659;
+  order: 0;
+  z-index: 10;
+  transition: all 0.5s;
+}
+.midia_item p {
+  color: #ece6f3;
+  width: 25rem;
+  position: absolute;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transform: scale(0);
+  margin-left: -5rem;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
