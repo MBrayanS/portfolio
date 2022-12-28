@@ -46,39 +46,6 @@ header {
             transform: translateY(-5px);
         };
     }
-
-    button {
-        background-color: $cor-tema-padrao;
-        width: 12rem;
-        height: 4rem;
-        box-shadow: .2rem .2rem .8rem $cor-tema-padrao;
-        border: none;
-        border-radius: 5px;
-        margin-left: 3rem;
-        transition: all .2s ease;
-        transform: none;
-        animation: show-banner-up 2s ease;
-        cursor: pointer;
-        
-        a {
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            color: $cor-tema-padrao-light;
-        }
-
-        &:hover {
-            background-color: $cor-tema-secundaria; 
-            transform: scale(1.05);
-            a{ color: $cor-tema5 }
-        };
-
-        &:active{
-            background-color: $cor-tema3; 
-            box-shadow: .2rem 0 .8rem $cor-tema-padrao;
-            transform: translateY(5px) scale(1.05);
-            a{ color: $cor-tema-padrao-light }
-        }
-    }
 }
 
 @keyframes show-banner-right {
