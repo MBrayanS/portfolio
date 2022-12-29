@@ -12,12 +12,7 @@ export default [
     {
         iconClass: 'fa-brands fa-square-js',
         name: 'JavaScript',
-        pContent: "- Clean code <br> - POO <br> - API's <br> - Design patters básicos"
-    },
-    {
-        iconClass: 'fa-brands fa-square-js',
-        name: 'Jquery',
-        pContent: '- Manipulação'
+        pContent: "- Clean code <br> - POO <br> - API's <br> - Design patters básicos <br> - Jquery"
     },
     {
         iconClass: 'fa-brands fa-sass',
