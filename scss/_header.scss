@@ -23,17 +23,17 @@ header {
     
     h1, p {
         text-shadow: .4rem .2rem .4rem $cor-tema-padrao;
-        margin-bottom: 3.5rem;
     }
-
+    
     h1 {
         font-family: $fonte-padrao;
         font-size: 3.5rem;
         animation: show-banner-right 1s ease;
         transform: none;
     }
-
+    
     p {
+        margin-top: 3.5rem;
         font-family: $fonte-legal;
         font-size: 1.8rem;
         cursor: pointer;
