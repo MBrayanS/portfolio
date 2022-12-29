@@ -19,4 +19,8 @@
         font-size: 1em;
         text-shadow: .1em .2em .3em $cor-tema5;
     }
+    
+    @media screen and (max-width: $break-two) {
+        font-size:  .6em;
+    }
 }

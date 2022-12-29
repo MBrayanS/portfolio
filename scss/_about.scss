@@ -9,6 +9,25 @@
 .about_container {
     @extend %section_container;
     flex-wrap: nowrap;
+
+    @media screen and (max-width: $break-one) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: $break-two) {
+        font-size: .6em;
+    }
+
+    @media screen and (max-width: $break-three) {
+        font-size: .5em;
+
+        .about_resume{
+            padding: 2em;
+            p { 
+                text-indent: 1em;
+            }
+        }
+    }
 }
 
 .about_perfil {

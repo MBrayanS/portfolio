@@ -8,6 +8,13 @@
 
 .contact_container {
     @extend %section_container;
+
+    @media screen and (max-width: $break-two) {
+        font-size: .5em;   
+        .midia_item {
+            border-radius: 10px
+        }
+    }
 }
 
 .midia-social {

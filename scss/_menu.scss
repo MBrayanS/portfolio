@@ -6,6 +6,10 @@
     right: -20em;
     transition: all .5s ease;
     z-index: 1001;
+
+    @media screen and (max-width: $break-three) {
+        font-size: .9em;
+    }
 }
 
 .sidebar--show {

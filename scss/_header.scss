@@ -3,6 +3,20 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
+
+    @media screen {
+        @media (max-width: $break-two) {
+            font-size: .7em;
+        }
+
+        @media (max-width: $break-three) {
+            font-size: .6em;
+        }
+
+        @media (max-width: $break-four) {
+            font-size: .5em;
+        }
+    }
 }
 
 .img-wrapper {

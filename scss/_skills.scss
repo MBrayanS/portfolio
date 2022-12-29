@@ -1,5 +1,24 @@
 .skills {
     @extend %section;
+
+    @media screen {
+        @media (max-width: $break-one) {
+        }
+        
+        @media (max-width: $break-two){
+            p { font-size: 1.1em; } 
+            i, h3 { font-size: 1.3em; }
+        }
+
+        @media (max-width: $break-three) {
+            font-size: .55em;
+        }
+
+        @media (max-width: $break-four) {
+            font-size: .8em;
+        }
+    }
+
 }
 
 .skills_title {

@@ -22,6 +22,16 @@ $card-width: 18em;
     grid-template-columns: repeat(auto-fit, minmax($card-width, $card-width));
     margin: 0 auto;
     gap: 2em;
+    
+    @media screen {
+        @media (max-width: $break-two) {
+            font-size: .8em;
+        }
+
+        @media (max-width: $break-three) {
+            font-size: .5em;
+        }
+    }
 }
 
 .projects_card {
@@ -30,10 +40,10 @@ $card-width: 18em;
     transition: all .5s;
     box-shadow: 0 0 1em $cor-tema-padrao;
     border-radius: 10px;
-
+    
     &:hover {
         transform: scale(1.05);
-
+        
         img { opacity: .2; }
     }
 }
