@@ -3,7 +3,7 @@
     display: flex;
     position: fixed;
     top: 0;
-    right: -20rem;
+    right: -20em;
     transition: all .5s ease;
     z-index: 1001;
 }
@@ -11,38 +11,38 @@
 .sidebar--show {
     right: 0;
     .sidebar_hamburguer {
-        right: -5rem;
+        right: -5em;
     }
 }
 
 .sidebar_hamburguer {
     @extend %centralizar-conteudo;
     background-color: $cor-tema-secundaria-light;
-    width: 5rem;
-    height: 5rem;
+    width: 5em;
+    height: 5em;
     position: relative;
-    right: 0rem;
+    right: 0em;
     border-radius: 50% 0 0 50%;
-    margin-top: .5rem;
+    margin-top: .5em;
     transition: all .5s ease;
     animation: slide-left 1s ease;
     cursor: pointer;
 }
 
 .hamburguer_btn {
-    width: 3rem;
-    height: 2.5rem;
+    width: 3em;
+    height: 2.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: .5rem;
+    margin-left: .5em;
     transform: rotate(0deg);
     transition: all .5s;
     
     &:hover .line {
         transition: all .4s ease;
         background-color: $cor-tema5;
-        text-shadow: .2rem .1rem 0.3rem $cor-tema4;
+        text-shadow: .2em .1em 0.3em $cor-tema4;
     }
 }
 
@@ -53,38 +53,39 @@
 .line {
     background-color: $cor-tema3;
     width: 100%;
-    height: .5rem;
+    height: .5em;
     border-radius: 2px;
-    box-shadow: 0 0 .3rem $cor-tema-padrao;
+    box-shadow: 0 0 .3em $cor-tema-padrao;
 }
 
 .sidebar_menu {
     @extend %centralizar-conteudo;
     background-color: $cor-tema-secundaria-light;
-    width: 20rem;
+    width: 20em;
     height: 100vh;
 }
 
 .menu_lista {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
     font-family: $fonte-padrao;
     font-weight: 700;
     color: $cor-tema3;
-    text-shadow: .2rem .1rem 0.3rem $cor-tema-padrao;
+    text-shadow: .1em .05em 0.2em $cor-tema-padrao;
     
-    li { margin: 3rem 0; } 
+    li { margin: 1.5em 0; } 
 }
-    
+
 .menu_link {
     color: inherit;
+    transition: all .3s;
     &:hover {
         color: $cor-tema5;
-        text-shadow: .2rem .1rem 0.3rem $cor-tema4;
+        text-shadow: .1em .05em 0.2em $cor-tema4;
     }
 }
 
 @keyframes slide-left {
-    from { right: -5rem; opacity: 0;}
+    from { right: -5em; opacity: 0;}
     to { right: 0; opacity: 1; }
 }

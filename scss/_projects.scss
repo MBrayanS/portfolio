@@ -1,4 +1,4 @@
-$card-width: 18rem;
+$card-width: 18em;
 
 %card {
     width: 100%;
@@ -21,18 +21,18 @@ $card-width: 18rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($card-width, $card-width));
     margin: 0 auto;
-    gap: 2rem;
+    gap: 2em;
 }
 
 .projects_card {
     width: $card-width;
-    height: 30rem;
+    height: 30em;
     transition: all .5s;
-    box-shadow: 0 0 1rem $cor-tema-padrao;
+    box-shadow: 0 0 1em $cor-tema-padrao;
     border-radius: 10px;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
 
         img { opacity: .2; }
     }
@@ -58,15 +58,15 @@ $card-width: 18rem;
     h3 {
         color: $cor-tema-padrao;
         text-align: center;
-        text-shadow: 0 0 .5rem black;
+        text-shadow: 0 0 .5em black;
         font-family: $fonte-legal;
-        font-size: 1.8rem;
+        font-size: 1.8em;
     }
 
     div {
         display: flex;
         flex-direction: column;
-        margin: 5rem 0 1.5rem;
+        margin: 5em 0 1.5em;
     }
 }
 
@@ -74,24 +74,24 @@ $card-width: 18rem;
     @extend %centralizar-conteudo;
     background-color: $cor-tema-padrao;
     color: $cor-tema-secundaria-light;
-    width: 12rem;
-    height: 3.5rem;
-    box-shadow: .2rem .2rem .8rem $cor-tema-padrao;
+    width: 12em;
+    height: 3.5em;
+    box-shadow: .2em .2em .8em $cor-tema-padrao;
     border: none;
     border-radius: 5px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
     transition: all .5s;
     font-family: $fonte-padrao;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1em;
 
     &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     &:active{
         background-color: $cor-tema3; 
-        box-shadow: .2rem 0 .8rem $cor-tema-padrao;
+        box-shadow: .2em 0 .8em $cor-tema-padrao;
         transform: translateY(5px) scale(1.15);
     }
 }

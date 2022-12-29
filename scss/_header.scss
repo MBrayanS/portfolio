@@ -22,20 +22,20 @@ header {
     left: 10%;
     
     h1, p {
-        text-shadow: .4rem .2rem .4rem $cor-tema-padrao;
+        text-shadow: .1em .1em .1em $cor-tema-padrao;
     }
     
     h1 {
         font-family: $fonte-padrao;
-        font-size: 3.5rem;
+        font-size: 3.5em;
         animation: show-banner-right 1s ease;
         transform: none;
     }
     
     p {
-        margin-top: 3.5rem;
+        margin-top: 3.5em;
         font-family: $fonte-legal;
-        font-size: 1.8rem;
+        font-size: 1.8em;
         cursor: pointer;
         animation: show-banner-right 1.5s ease;
         transform: none;
@@ -49,13 +49,13 @@ header {
 }
 
 @keyframes show-banner-right {
-    0% { transform: translateX(50rem); opacity: 0;}
+    0% { transform: translateX(50em); opacity: 0;}
     20% { opacity: 0;}
     100% { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes show-banner-up {
-    0% { transform: translateY(10rem); opacity: 0; }
+    0% { transform: translateY(10em); opacity: 0; }
     20% { opacity: 0;}
     100% { transform: translateY(0); opacity: 1; }
 }
