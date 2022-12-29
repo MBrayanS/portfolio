@@ -8,14 +8,11 @@
 
 .contact_container {
     @extend %section_container;
-    min-height: 50vh
 }
 
 .midia-social {
     @extend %centralizar-conteudo;
     width: 100%;
-    display: flex;
-    flex-direction: row;
 }
 
 .midia_item {
@@ -27,11 +24,11 @@
     border: 2px solid $cor-tema5;
     border-radius: 20px;
     box-shadow: 0 0 .5rem $cor-tema-padrao;
-    margin: 2rem 3rem;
+    margin: 2rem auto;
     cursor: pointer;
     transition: all .5s;
     
-    &:active, &:hover{
+    &:hover{
         width: 30rem;
         background-color: $cor-tema5;
         transform: scale(1.1);
@@ -42,7 +39,7 @@
             transform: translateX(12rem) rotate(360deg);
         }
         
-        p {
+        a {
             transform: scale(1);
             opacity: 1;
         }
@@ -51,12 +48,10 @@
     i {
         font-size: 4rem;
         color: $cor-tema5;
-        order: 0;
-        z-index: 10;
         transition: all .5s;
     }
 
-    p {
+    a {
         @extend %centralizar-conteudo;
         color: $cor-tema-secundaria-light; 
         width: 25rem;
