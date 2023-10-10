@@ -7,8 +7,17 @@
 
 # Sobre mim
 
-Me chamo _Micael Brayan_, tenho 21 anos e sou apaixonado por tecnologia, arte e principalmente códigos.
-Atualmente estou iniciando na área da programação, puxando para o lado front-end.
+Me chamo _Micael Brayan_.
+
+  Sou um desenvolvedor web autodidata, apaixonado por aprender coisas novas. Amante de tecnologia, arte, matemática, e as maravilhas do universo observável.
+
+  Minha trajetória com códigos começou perto de 2015. Quando aprendi a desenvolver jogos por diversão. Ali descobri minha paixão e conheci alguns dos pilares da programação.
+
+  Atualmente atuo como freelancer. Buscando aprender as melhores práticas de desenvolvimento, tanto nas tecnologias em si, quanto em estratégias para melhorar e acelerar o fluxo de trabalho.
+
+  Tenho experiência com tecnologias front-end e back-end como HTML, CSS, JavaScript, SASS, Node, Express, consumo de APIs e testes com Jest.
+
+  Estou sempre focado em escrever códigos escaláveis e pensando na experiência do usuário.
 
 <br><br>
 
