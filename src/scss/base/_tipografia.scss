@@ -1,0 +1,9 @@
+%texto {
+    letter-spacing: .5rem;
+}
+
+%texto-contorno-gradiente {
+    background: -webkit-linear-gradient($gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1rem transparent;
+}
