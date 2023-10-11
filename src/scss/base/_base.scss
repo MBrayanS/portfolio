@@ -1,6 +1,48 @@
 * {
+    color: $cor-1;
+    width: max-content;
+    height: max-content;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-size: 10px;
+    font-family: Russo One, sans;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+body, html {
+    @extend %barra-de-rolagem;
+
+    background-color: $cor-11;
+    background-image: url('../img/background.png');
+    background-size: auto;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+main {
+    width: auto;
+    display: grid;
+    gap: 9.6rem;
+    padding: 0 11.2rem;
+
+    section {
+        width: 100%;
+
+        .titulo {
+            @extend %texto;
+            font-size: 3.2rem;
+        }
+
+        hr {
+            background-image: linear-gradient($gradiente);
+            width: 100%;
+            height: .2rem;
+            margin: .8rem 0 6.4rem;
+            border: none;
+        }
+    }
 }
