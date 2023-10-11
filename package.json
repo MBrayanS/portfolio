@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Portfólio profissional",
   "scripts": {
-    "scss": "node-sass src/scss -o public/style --output-style compressed -w"
+    "scss": "node-sass src/scss -o public/style --output-style compressed -w *.scss"
   },
   "author": "MBrayanS",
   "license": "MIT",
