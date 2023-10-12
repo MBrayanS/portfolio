@@ -3,11 +3,10 @@
         width: 100%;
 
         .card {
-            background-color: $cor-7-85;
+            @extend %card-padrao;
+            
             width: 100%;
             padding: 3.2rem;
-            border: .1rem solid $cor-3;
-            border-radius: 2.4rem;
             box-sizing: border-box;
             
             .topo {
@@ -20,14 +19,14 @@
                 .imagem-do-projeto {
                     background-color: $cor-11;
                     width: 40rem;
-                    height: 30rem;
+                    height: 27rem;
                 }
     
                 .descricao {
                     width: 100%;
                     
                     .titulo {
-                        font-size: 2rem;
+                        font-size: 2.4rem;
                         margin-bottom: 2rem;
                     }
                     
@@ -45,20 +44,14 @@
             .rodape {
                 display: flex;
                 flex-direction: column;
+                overflow: initial;
     
                 .tecnologias {
                     display: flex;
                     gap: 1.6rem;
+                    overflow: initial;
     
-                    .tech {
-                        background-color: $cor-6;
-                        width: 4rem;
-                        height: 4rem;
-                        display: grid;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 50%;
-                    }
+                    .tech { @extend %card-tech }
                 }
     
                 .botoes {
