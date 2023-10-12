@@ -1,6 +1,14 @@
 .projetos {
     .conteudo {
         width: 100%;
+        display: grid;
+        gap: 4.2rem;
+
+        .card:nth-child(even) {
+            .topo { grid-template-columns: 1fr max-content; }
+            .imagem-do-projeto { order: 2 !important; }
+            .descricao { order: 1 !important; }
+        }
 
         .card {
             @extend %card-padrao;
@@ -20,10 +28,12 @@
                     background-color: $cor-11;
                     width: 40rem;
                     height: 27rem;
+                    order: 1;
                 }
     
                 .descricao {
                     width: 100%;
+                    order: 2;
                     
                     .titulo {
                         font-size: 2.4rem;
