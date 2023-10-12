@@ -31,12 +31,10 @@
                     }
                     
                     .resumo {
+                        @extend %texto;
+
                         color: $cor-2;
                         width: 100%;
-                        margin-bottom: 1.5rem;
-                        font-size: 1.6rem;
-                        line-height: 2.5rem;
-                        text-indent: 1rem;
                     }
                 }
             }
