@@ -1,0 +1,76 @@
+.sobre {
+    width: 100%;
+
+    .conteudo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 3.2rem;
+
+        .perfil, .resumo {
+            @extend %card-padrao; 
+
+            height: 100%;
+            padding: 3.2rem 2.4rem;
+        }
+        
+        .perfil {
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .imagem-do-perfil {
+                background-image: url('../img/foto-de-perfil.jpg');
+                background-size: cover;
+                background-position: center;
+                width: 14rem;
+                height: 14rem;
+                border: .2rem solid $cor-3;
+                border-radius: 1.6rem;
+            }
+
+            ul {
+                display: grid;
+                gap: 1.6rem;
+                margin-left: .5rem;
+                
+                li { @extend %lista-estilizada; }
+                li, span {  font-size: 1.4rem; }
+            }
+
+            .redes-sociais {
+                display: flex;
+                gap: 1.2rem;
+                overflow: initial;
+                margin-top: auto;
+
+                .rede { 
+                    border: .2rem solid $cor-3;
+                    border-radius: .8rem;
+                    padding: .4rem;
+                    transition: all .5s;
+                    cursor: pointer;
+
+                    &:hover { transform: scale(1.1); }
+
+                    img {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                    }
+                }
+            }
+        }
+
+        .resumo {
+            width: 100%;
+
+            p {
+                @extend %texto;
+
+                color: $cor-2;
+                width: 100%;
+            }
+        }
+    }
+}
