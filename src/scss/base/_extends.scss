@@ -20,3 +20,52 @@
         border-radius: .35rem;
     }
 }
+
+%card-padrao {
+    background-color: $cor-7-85;
+    border: .1rem solid $cor-3;
+    border-radius: 2.4rem;
+    box-sizing: border-box;
+}
+
+%card-tech {
+    background-color: $cor-6;
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: initial;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    
+    p {
+        background-color: $cor-7-85;
+        display: none;
+        position: absolute;
+        top: -75%;
+        left: 50%;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        border: .1rem solid $cor-6;
+        border-radius: .25rem;
+        z-index: 1;
+    }
+    
+    &:hover p {
+        display: block;
+        animation: aparecer .5s ease;
+    }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
