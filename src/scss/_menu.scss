@@ -1,3 +1,114 @@
 .menu {
-    display: none;
+    display: flex;
+    gap: 3.2rem;
+    position: fixed;
+    top: 3.2rem;
+    right: 3.2rem;
+    z-index: 10;
+    
+    &.menu--invisivel {
+        nav { animation: encolher 1s forwards ease; }
+        //nav a { animation: aparecer reverse 1s forwards ease; }
+
+        img { transform: rotate(180deg); }
+    }
+
+    nav, button { @extend %card-padrao; }
+    
+    nav {
+        display: flex;
+        gap: 4rem;
+        padding: 1.6rem 4.8rem;
+        animation: mostrar 1s ease;
+        
+        a {
+            font-size: 1.6rem;
+        }
+    }
+    
+    button { 
+        width: 5.2rem; 
+        height: 5.2rem;
+        padding: 1rem;
+        cursor: pointer;
+        
+        img {
+            width: 100%;
+            transition: all .5s;
+        }
+    }
 }
+
+@keyframes encolher {
+    0% {
+        width: 57.4rem;
+    }
+    
+    50% {
+        width: 5.2rem;
+        padding: 1.6rem;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    100% {
+        width: 5.2rem;
+        padding: 1.6rem;
+        transform: translateX(200%);
+        opacity: 0;
+    }
+}
+
+@keyframes mostrar{
+    100% {
+        width: 57.4rem;
+    }
+    
+    50% {
+        width: 5.2rem;
+        padding: 1.6rem;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    0% {
+        width: 5.2rem;
+        padding: 1.6rem;
+        transform: translateX(200%);
+        opacity: 0;
+    }
+}
+
+// &.menu--visivel {
+//     img { transform: rotate(0deg); }
+
+//     nav {
+//         width: max-content;
+//         height: max-content;
+//         transform: translateX(0);
+//         opacity: 1;
+//         padding: 1.6rem 4.8rem;
+
+//         a {
+    //             transform: scale(1);
+    //         }
+    //     }
+    // }
+    
+    // nav, button { @extend %card-padrao; }
+    
+    // nav {
+        //     height: 5.2rem;
+        //     width: 5.2rem;
+        //     display: flex;
+        //     gap: 4rem;
+        //     transform: translateX(200%);
+        //     opacity: 0;
+        //     transition: all 1s;
+        
+        //     a {
+            //         transform: scale(0);
+//         font-size: 1.6rem;
+//         transition: all 10s;
+//     }
+// }
