@@ -73,4 +73,35 @@
             }
         }
     }
+
+    @media screen {
+        @media( max-width: $ponto-de-quebra-1100 ) {
+            .conteudo {
+                display: flex;
+                flex-direction: column;
+
+                .perfil {
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    .redes-sociais { margin: 0; }
+                }
+            }
+        }
+
+        @media( max-width: $ponto-de-quebra-800 ) {
+            .conteudo .perfil {
+                justify-content: center;
+                gap: 4rem;
+            }
+        }
+
+        @media( max-width: $ponto-de-quebra-800 ) {
+            .conteudo .perfil {
+                flex-wrap: wrap;
+            }
+        }
+    }
 }
