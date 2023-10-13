@@ -10,7 +10,12 @@
     font-family: Russo One, sans;
     font-weight: 400;
     overflow: hidden;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+
+    @media screen {
+        @media( max-width: $ponto-de-quebra-800 ) { font-size: 8px; }
+        @media( max-width: $ponto-de-quebra-400 ) { font-size: 2vw; }
+    }
 }
 
 body, html {
