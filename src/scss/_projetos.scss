@@ -43,7 +43,23 @@
                         }
                     }
 
-                    .mostrar-mais { display: none; }
+                    .mostrar-mais {
+                        width: 100%;
+                        display: none;
+                        justify-content: center;
+                        bottom: 0rem;
+                        padding: 1.5rem;
+                        
+                        button {
+                            background: none;
+                            padding: 1rem;
+                            border: .1rem solid $cor-1;
+                            border-radius: .5rem;
+                            font-size: 1.5rem;
+
+                            &:active { transform: translateY(.2rem); }
+                        }
+                    }
                 }
             }
     
@@ -105,23 +121,7 @@
                         &.resumo--mostrar-tudo { max-height: 100%; }
                     }
 
-                    .mostrar-mais {
-                        width: 100%;
-                        display: grid;
-                        justify-content: center;
-                        bottom: 0rem;
-                        padding: 1.5rem;
-                        
-                        button {
-                            background: none;
-                            padding: 1rem;
-                            border: .1rem solid $cor-1;
-                            border-radius: .5rem;
-                            font-size: 1.5rem;
-
-                            &:active { transform: translateY(.2rem); }
-                        }
-                    }
+                    .mostrar-mais { display: grid; }
                 }
 
                 .rodape .botoes {
@@ -140,17 +140,8 @@
         @media( max-width: $ponto-de-quebra-600 ) {
             .conteudo .card .rodape .botoes {
                 button {
-                    width: 20rem;
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        @media( max-width: $ponto-de-quebra-400 ) {
-            .conteudo .card .rodape .botoes {
-                button {
                     width: 100%;
-                    font-size: 3.5rem;
+                    font-size: 2rem;
                 }
             }
         }
