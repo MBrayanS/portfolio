@@ -38,9 +38,10 @@ main {
     section {
         width: 100%;
 
-        .titulo {
+        > .titulo {
             font-size: 3.2rem;
             letter-spacing: .5rem;
+            margin-top: 4rem;
         }
 
         hr {
