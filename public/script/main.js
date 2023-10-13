@@ -25,3 +25,23 @@ function destravarMenu() {
         menuDOM.classList.remove('menu--invisivel')
     }
 }
+
+const listaDeProjetos = document.querySelectorAll('.projetos .card')
+
+listaDeProjetos.forEach( projetoDOM => {
+    const resumoDOM = projetoDOM.querySelector('.resumo')
+    const btnMostrarMaisDOM = projetoDOM.querySelector('.mostrar-mais button')
+
+    btnMostrarMaisDOM.addEventListener('click', () => {
+        mostrarOcultarResumo(resumoDOM)
+        atualizarbtnMostrarMais(btnMostrarMaisDOM, resumoDOM)
+    }) 
+})
+
+function mostrarOcultarResumo( resumoDOM ) { resumoDOM.classList.toggle('resumo--mostrar-tudo') }
+
+function atualizarbtnMostrarMais( btnMostrarMaisDOM, resumoDOM ) {
+    const oTextoEstaVisivel = resumoDOM.classList.value.includes('resumo--mostrar-tudo')
+
+    btnMostrarMaisDOM.innerHTML = oTextoEstaVisivel ? 'Mostrar menos' : 'Mostrar mais'
+}
