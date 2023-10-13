@@ -46,6 +46,11 @@ main {
             border: none;
         }
     }
+
+    @media screen {
+        @media( max-width: $ponto-de-quebra-800 ) { padding: 0 4rem; }
+        @media( max-width: $ponto-de-quebra-400 ) { padding: 0 2.5rem; }
+    }
 }
 
 footer {
