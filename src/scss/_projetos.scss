@@ -21,14 +21,22 @@
                     .imagem-do-projeto {
                         background-color: $cor-11;
                         width: 40rem;
-                        height: 27rem;
+                        height: 21rem;
+                        min-height: 100%;
                         margin: 0 2rem 1rem 0;
                         float: left;
+                        object-fit: scale-down;
+                        border-radius: .5rem;
+                        border: .2rem solid #26488C;
+                        filter: brightness(0.75);
                     }
+
+                    .imagem-do-projeto--mobile { width: auto }
         
                     .titulo {
-                        font-size: 2.4rem;
                         margin-bottom: 2rem;
+                        font-size: 2.4rem;
+                        letter-spacing: .2rem;
                     }
                     
                     .resumo {
@@ -68,12 +76,19 @@
                 display: flex;
                 flex-direction: column;
                 overflow: initial;
+
+                .subtitulo {
+                    margin-bottom: 2rem;
+                    font-size: 1.8rem;
+                    letter-spacing: .2rem;
+                }
     
                 .tecnologias {
                     width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     gap: 1.6rem;
+                    margin-bottom: 2rem;
                     overflow: initial;
     
                     .tech { @extend %card-tech }
@@ -86,11 +101,11 @@
     
                     button {
                         background-color: $cor-10;
-                        width: 16rem;
+                        width: max-content;
                         border: none;
                         font-size: 1.6rem;
                         border-radius: .4rem;
-                        padding: 1.2rem;
+                        padding: 1.2rem 2.5rem;
                         letter-spacing: .25rem;
                         transition: all .35s;
                         cursor: pointer;
@@ -114,6 +129,8 @@
                         float: none;
                         margin: 0 auto 3.2rem;
                     }
+
+                    .imagem-do-projeto--mobile { margin: 0 auto 3.2rem 0; }
 
                     .resumo {
                         max-height: 5rem;
