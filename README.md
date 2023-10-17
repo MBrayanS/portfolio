@@ -19,15 +19,7 @@ Me chamo _Micael Brayan_.
 
   Estou sempre focado em escrever códigos escaláveis e pensando na experiência do usuário.
 
-<br><br>
+<br>
 
-# Meus principais projetos
-
- - [Portfólio](https://mbrayans.vercel.app/)
- - [Lading page de produtos](https://github.com/MBrayanS/Landing-page-para-venda-de-headphones)
- - [Lista de catálogos](https://github.com/MBrayanS/Minha-lista-de-catalogos)
- - [Game of life](https://github.com/MBrayanS/Game-of-life)
- 
- <br><br>
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=100&color=652AA8&section=footer"/>
