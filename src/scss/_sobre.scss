@@ -40,25 +40,12 @@
             }
 
             .redes-sociais {
+                @extend %card-rede-social;
+
                 display: flex;
                 gap: 1.2rem;
                 overflow: initial;
                 margin-top: auto;
-
-                .rede { 
-                    border: .2rem solid $cor-3;
-                    border-radius: .8rem;
-                    padding: .4rem;
-                    transition: all .5s;
-                    cursor: pointer;
-
-                    &:hover { transform: scale(1.1); }
-
-                    img {
-                        width: 3.5rem;
-                        height: 3.5rem;
-                    }
-                }
             }
         }
 
