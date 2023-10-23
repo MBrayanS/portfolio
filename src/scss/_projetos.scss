@@ -42,13 +42,15 @@
                     .resumo {
                         width: 100%;
 
-                        p {
+                        p, strong {
                             @extend %texto;
     
                             color: $cor-2;
                             width: 100%;
                             overflow: initial;
                         }
+
+                        strong { color: $cor-12; }
                     }
 
                     .mostrar-mais {

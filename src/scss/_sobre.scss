@@ -65,12 +65,14 @@
         .resumo {
             width: 100%;
 
-            p {
+            p, strong {
                 @extend %texto;
 
                 color: $cor-2;
                 width: 100%;
             }
+
+            strong { color: $cor-12; }
         }
     }
 
