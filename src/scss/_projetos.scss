@@ -125,13 +125,11 @@
             .conteudo .card { 
                 .topo .descricao {
                     display: flex;
-                    flex-direction: column;
-                    
-                    .imagem-do-projeto {
-                        float: none;
-                        margin: 0 auto 3.2rem;
-                    }
+                    justify-items: center;
+                    flex-wrap: wrap;
 
+                    .titulo { width: 100%; }
+                    .imagem-do-projeto { margin: 0 2rem 3.2rem auto; }
                     .imagem-do-projeto--mobile { margin: 0 auto 3.2rem 0; }
 
                     .resumo {
@@ -157,8 +155,25 @@
         }
 
         @media( max-width: $ponto-de-quebra-600 ) {
-            .conteudo .card .rodape .botoes {
-                button {
+            .conteudo .card {
+                .topo .descricao {
+                    position: relative;
+
+                    .imagem-do-projeto {
+                        height: 100%;
+                        margin: 0 auto 5rem;
+                    }
+
+                    .imagem-do-projeto--mobile { 
+                        height: 20rem;
+                        min-height: 0;
+                        position: absolute;
+                        top: 7rem;
+                        right: 2%;
+                    }
+                }
+
+                .rodape .botoes button {
                     width: 100%;
                     font-size: 2rem;
                 }
