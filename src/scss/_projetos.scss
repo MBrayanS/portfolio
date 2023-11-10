@@ -25,7 +25,7 @@
                         min-height: 100%;
                         margin: 0 2rem 1rem 0;
                         float: left;
-                        object-fit: scale-down;
+                        object-fit: cover;
                         border-radius: .5rem;
                         border: .2rem solid #26488C;
                         filter: brightness(0.75);
@@ -159,16 +159,13 @@
                 .topo .descricao {
                     position: relative;
 
-                    .imagem-do-projeto {
-                        height: 100%;
-                        margin: 0 auto 5rem;
-                    }
+                    .imagem-do-projeto { margin: 0 auto 5rem; }
 
                     .imagem-do-projeto--mobile { 
                         height: 20rem;
                         min-height: 0;
                         position: absolute;
-                        top: 7rem;
+                        top: 15%;
                         right: 2%;
                     }
                 }
