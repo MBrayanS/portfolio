@@ -7,17 +7,17 @@
 
 # Sobre mim
 
-Me chamo _Micael Brayan_.
+  Me chamo _Micael Brayan_.
 
-  Sou um desenvolvedor web autodidata, apaixonado por aprender coisas novas. Amante de tecnologia, arte, matemática, e as maravilhas do universo observável.
+  Sou desenvolvedor web autodidata, apaixonado por aprender coisas novas. Amante de tecnologia, arte, matemática, e as maravilhas do universo observável.
 
-  Minha trajetória com códigos começou perto de 2015. Quando aprendi a desenvolver jogos por diversão. Ali descobri minha paixão e conheci alguns dos pilares da programação.
+  Minha trajetória com códigos começou perto de 2015. Quando aprendi a desenvolver jogos por diversão. Ali descobri minha paixão e conheci alguns dos pilares da programação.
 
-  Atualmente atuo como freelancer. Buscando aprender as melhores práticas de desenvolvimento, tanto nas tecnologias em si, quanto em estratégias para melhorar e acelerar o fluxo de trabalho.
+   Atualmente estou em transição de carreira. E sempre que consigo um tempo atuo como freelancer. Sempre focado em escrever códigos escaláveis e pensando na experiência do usuário. Além de buscar aprender as melhores práticas de desenvolvimento, tanto as tecnologias em si, quanto as estratégias para melhorar e acelerar o fluxo de trabalho.
 
-  Tenho experiência com tecnologias front-end e back-end como HTML, CSS, JavaScript, SASS, Node, Express, consumo de APIs e testes com Jest.
+  Tenho experiência com tecnologias frontend como **HTML**, **CSS**, **SASS** e **JavaScript**. Também com tecnologias backend como **NodeJS**, **Express**, **Postgre** e testes com **Jest**.
 
-  Estou sempre focado em escrever códigos escaláveis e pensando na experiência do usuário.
+  Além de consumo de **APIs**, criação de designs com **Figma**, versionamento com **GIT** e **GITFLOW**.
 
 <br>
 
