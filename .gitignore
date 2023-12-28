@@ -1,2 +1,9 @@
-/node_modules
+# Diretórios
+
+node_modules
+dist
+Lixo
+
+# Arquivos
+
 package-lock.json
