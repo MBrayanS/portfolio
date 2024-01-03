@@ -1,0 +1,23 @@
+@import './variables.scss';
+@import './extend.scss';
+
+html, body { @extend %barra-de-rolagem; }
+
+body {
+    background-color: $Cor11;
+    background-image: url('../img/background.png');
+    background-size: auto;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 9.6rem;
+    padding: 0 8rem 8rem;
+
+    @media screen {
+        @include TabletPortrait { padding: 0 3.5rem 8rem; }
+        @include Mobile { padding: 0 2em 8rem; }
+    }
+}

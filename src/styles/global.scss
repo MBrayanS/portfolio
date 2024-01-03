@@ -1,7 +1,24 @@
-:root {
+@import './variables.scss';
+
+* {
+    color: $Cor1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: Russo One, sans;
+    font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
+    @media screen {
+        @include BigDesktop { font-size: .8vw; }
+        @include Desktop { font-size: 10px; }
+        @include TabletLandscape { font-size: .95vw; }
+        @include TabletPortrait { font-size: 1vw; }
+        @include Mobile { font-size: 1.7vw; }
+        @include SmallMobile { font-size: 1.7vw; }
+    }
 }

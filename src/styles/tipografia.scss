@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import './variables.scss';
+
+%texto-contorno-gradiente {
+    background: -webkit-linear-gradient($Gradiente);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 1rem transparent;
+}

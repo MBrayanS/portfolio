@@ -1,0 +1,28 @@
+%barra-de-rolagem {
+    ::-webkit-scrollbar { width: 1rem;}
+    ::-ms-scrollbar { width: 1rem; }
+    ::-moz-scrollbar {  width: 1rem; }
+    ::-webkit-scrollbar-track { background-color: $Cor6; }
+    ::-moz-scrollbar-track { background-color: $Cor6; }
+    ::-ms-scrollbar-track { background-color: $Cor6; }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $Cor10;
+        border-radius: .35rem;
+    }
+    ::-moz-scrollbar-thumb {
+        background-color: $Cor10;
+        border-radius: .35rem;
+    }
+
+    ::-ms-scrollbar-thumb {
+        background-color: $Cor10;
+        border-radius: .35rem;
+    }
+}
+
+%card {
+    background-color: $Cor7;
+    border: .2rem solid $Cor3;
+    border-radius: .6rem;
+}

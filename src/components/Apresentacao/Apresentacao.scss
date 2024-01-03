@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+@import '../../styles/tipografia.scss';
+
+.apresentacao {
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+    .conteudo {
+        display: grid;
+        justify-items: center;
+        gap: 2.4rem;
+        position: relative;
+        padding: 0 3.2rem;
+        animation: deslizar-para-cima 1.25s ease-out;
+        font-size: 1rem;
+        text-align: center;
+
+        h1 { 
+            font-size: 8rem;
+            letter-spacing: 1rem;
+        }
+        
+        p, span { font-size: 2.4rem; }
+
+        span {
+            content: 'Desenvolvedor frontend';
+            padding: 0 .5rem;
+            -webkit-text-stroke: .6rem transparent !important;
+            white-space: nowrap;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            letter-spacing: .5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h1, p > span { @extend %texto-contorno-gradiente; }
+    }
+
+    .redes-sociais {
+        background-color: $Cor7;
+        position: absolute;
+        left: 8rem;
+        border: .2rem solid $Cor3;
+        border-radius: .8rem;
+        animation: deslizar-para-direita 1.25s ease-out;
+    }
+
+    @include TabletPortrait {
+        padding: 0 1.6rem;
+        gap: 6.4rem;
+
+        .conteudo { padding: 0; }
+
+        .redes-sociais {
+            flex-direction: row;
+            bottom: 4.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@keyframes deslizar-para-cima {
+    0% { bottom: -35rem; opacity: 0; }
+    60% { opacity: .3; }
+    100% { bottom: 0rem; opacity: 1; }
+}
+
+@keyframes deslizar-para-direita {
+    0% { left: -35rem; opacity: 0; }
+    60% { opacity: .3; }
+    100% { left: 6.4rem; opacity: 1; }
+}

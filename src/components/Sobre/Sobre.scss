@@ -1,0 +1,116 @@
+@import '../../styles/variables.scss';
+@import '../../styles/extend.scss';
+
+.sobre {
+    width: 100%;
+
+    .conteudo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 2.6rem;
+
+        .perfil, .resumo {
+            padding: 3.2rem 2.4rem;
+            box-sizing: border-box;
+        }
+
+        .perfil {
+            @extend %card;
+
+            display: grid;
+            align-content: space-between;
+
+            .informacoes {
+                text-align: center;
+                
+                img {
+                    @extend %card;
+    
+                    width: 15rem;
+                    height: 15rem;
+                }
+
+                ul {
+                    display: grid;
+                    gap: 1.6rem;
+                    padding: 1.6rem 0;
+
+                    li, span {
+                        font-size: 1.4rem;
+                        letter-spacing: .1rem;
+                    }
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+
+                        &::before { 
+                            content: '';
+                            background-color: $Cor1;
+                            width: .5rem;
+                            height: .5rem;
+                            display: block;
+                            border-radius: 50%;
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+            }
+            
+            .redes-sociais {
+                height: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+
+                .rede { height: max-content }
+            }
+        }
+    
+        .resumo {
+            @extend %card;
+
+            width: 100%;
+
+            p, strong {
+                color: $Cor2;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                text-indent: 1rem;
+                letter-spacing: .2rem;
+            }
+
+            strong { color: $Cor12; }
+        }
+    }
+    
+    @include Mobile {
+        .conteudo {
+            grid-template-columns: 1fr;
+
+            .perfil {
+                display: flex;
+                justify-content: space-between;
+
+                .informacoes {
+                    display: flex;
+                    gap: 2rem;
+
+                    ul li, ul span { font-size: 1.8rem; }
+                }
+                
+                .redes-sociais {
+                    flex-direction: column;
+                    
+                    gap: 0;
+                }
+            }
+
+            .resumo { p, strong { font-size: 2rem; } }
+        }
+    }
+}
