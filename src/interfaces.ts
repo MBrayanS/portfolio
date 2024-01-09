@@ -8,8 +8,8 @@ export interface IProjeto {
     descricao: string
     tecnologias: Array<string>
     linkDaImagem: string
-    linkDoDeploy: string
-    linkDoRepo: string
+    linkDoDeploy?: string
+    linkDoRepo?: string
 }
 
 export interface ITecnologia {

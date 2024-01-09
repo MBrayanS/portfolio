@@ -13,6 +13,12 @@ export default function CardProjeto( props: IProjeto ) {
 
     const [ caminhoDaImagem, setCaminhoDaImagem ] = useState(linkDaImagem)
 
+    const soHaUmButton = linkDoDeploy && linkDoRepo ? false : true
+
+    const renderizarBtn = ( link: string, texto: string ) => {
+        return <a rel='noopener' href={link} target="_blank"> <p>{texto}</p> <span className='background'></span> </a>
+    }
+
     const onError = () => setCaminhoDaImagem(imagemNaoCarregada)
 
     return <div className="card-projeto">
@@ -40,15 +46,9 @@ export default function CardProjeto( props: IProjeto ) {
 
         }</div>
 
-        <div className="btns">
-            <a rel='noopener' href={linkDoDeploy} target="_blank">
-                <p>Deploy</p>
-                <span className='background'></span>
-            </a>
-            <a rel='noopener' href={linkDoRepo} target="_blank">
-                <p>Código</p>
-                <span className='background'></span>
-            </a>
+        <div className={ 'btns' + ( soHaUmButton ? ' btns--um-btn' : '' ) }>
+            { linkDoDeploy && renderizarBtn(linkDoDeploy, 'Deploy') }
+            { linkDoRepo && renderizarBtn(linkDoRepo, 'Código') }
         </div>
 
     </div>
