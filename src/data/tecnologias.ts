@@ -7,6 +7,7 @@ const tecnologias: ITecnologia = {
     'JAVASCRIPT': { descricao: 'Linguagem de programação', imagem: './img/icons/icon-tech-javascript.svg' },
     'TYPESCRIPT': { descricao: 'Linguagem de programação', imagem: './img/icons/icon-tech-typescript.svg' },
     'REACT': { descricao: 'Framework', imagem: './img/icons/icon-tech-react.svg' },
+    'VITE': { descricao: 'Construtor de projetos', imagem: './img/icons/icon-tech-vite.svg' },
     'JEST': { descricao: 'Testes automatizados', imagem: './img/icons/icon-tech-jest.svg' },
     'POSTGRESQL': { descricao: 'Banco de dados', imagem: './img/icons/icon-tech-postgresql.svg' },
     'NODE': { descricao: 'Interpretador de código', imagem: './img/icons/icon-tech-node.svg' },
