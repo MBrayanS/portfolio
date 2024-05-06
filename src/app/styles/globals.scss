@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+.flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.luz {
+  position: relative;
+    
+  &::before {
+    content: '';
+    background: radial-gradient(circle, $color-I 0%, rgba(0, 0, 0, 0) 70%);
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
