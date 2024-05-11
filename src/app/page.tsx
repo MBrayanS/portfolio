@@ -1,10 +1,17 @@
-import '@/app/styles/page.scss'
+import { Apresentacao, Cabecalho } from '@/app/views'
+import { ParaOTopo } from '@/components'
 
 const Home = () => {
     return (
-        <main className='main'>
-            <h1>Hello World</h1>
-        </main>
+        <>
+            <Cabecalho />
+
+            <main>
+                <Apresentacao />
+            </main>
+
+            <ParaOTopo />
+        </>
     )
 }
 
