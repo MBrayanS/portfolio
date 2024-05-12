@@ -24,7 +24,7 @@ export const ParaOTopo = () => {
     return (
         btnVisivel &&
         <div className='para-o-topo'>
-            <ScrollLink to="apresentacao">
+            <ScrollLink to='apresentacao'>
                 <Icon alt='Para o topo' name='seta' />
             </ScrollLink>
         </div>

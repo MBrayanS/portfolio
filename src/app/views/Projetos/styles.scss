@@ -1,0 +1,8 @@
+@import '@/app/styles/variables.scss';
+
+.secao-projetos .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, max-content));
+    grid-row: auto;
+    gap: 2.4rem;
+}

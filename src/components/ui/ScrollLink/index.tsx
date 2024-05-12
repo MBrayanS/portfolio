@@ -2,13 +2,17 @@
 
 export const ScrollLink = ( props: any ) => {
     const { to, children } = props
+    
+    const MARGIN_DO_SCROLL = 64
 
-    const clicou = ( e : any) => {
-        e.preventDefault()
-
+    const clicou = () => {
         const elemento = document.getElementById(to)
 
-        if( elemento ) elemento.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        if( !elemento ) return
+
+        const scrollAlvo = elemento.offsetTop - MARGIN_DO_SCROLL
+
+        window.scrollTo({ top: scrollAlvo, behavior: 'smooth' })
     }
 
     return (

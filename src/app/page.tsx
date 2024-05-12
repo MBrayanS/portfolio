@@ -1,4 +1,4 @@
-import { Apresentacao, Cabecalho } from '@/app/views'
+import { Apresentacao, Cabecalho, Projetos } from '@/app/views'
 import { ParaOTopo } from '@/components'
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
 
             <main>
                 <Apresentacao />
+                <Projetos /> 
             </main>
 
             <ParaOTopo />
