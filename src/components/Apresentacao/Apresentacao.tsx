@@ -8,7 +8,7 @@ export default function Apresentacao() {
     const telaMenorQue600 = useMediaQuery({ maxWidth: 600 })
 
     const renderizarNome = () => ( telaMenorQue600 ? 'MBrayan' : 'Micael Brayan' ) 
-    const renderizarSubtitulo = () => ( telaMenorQue600 ? 'Dev frontend' : 'Desenvolvedor Frontend' )
+    const renderizarSubtitulo = () => ( telaMenorQue600 ? 'Dev Full Stack' : 'Desenvolvedor Full Stack' )
 
     return <section id="apresentacao" className='apresentacao'>
 

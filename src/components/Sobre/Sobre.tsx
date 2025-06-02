@@ -31,15 +31,16 @@ export default function Sobre() {
             </div>
 
             <div className="resumo">
-                <p> Sou um desenvolvedor <strong>frontend</strong> com experiência em <strong>backend</strong>. Autodidata, estou sempre ansioso por aprender e enfrentar novos desafios. Sou também apaixonado por astronomia, arte, matemática e claro, uma boa xicará de café. </p>
+                <p>Oi! Eu sou <strong>Micael Brayan</strong>, uma pessoa curiosa, apaixonada por tecnologia, desenvolvimento e tudo que envolve criatividade e aprendizado.</p>
 
-                <p> Minha jornada começou perto de 2015, enquanto eu aprendia a desenvolver jogos por pura diversão. Ali descobri minha paixão por códigos e conheci alguns dos principais pilares da programação. </p>
-                
-                <p> Atualmente, estou em transição de carreira, explorando também oportunidades como <strong>freelancer</strong>. Como desenvolvedor web, adoto metodologias ágeis, especialmente o <strong>Kanban</strong>. E comprometido com a qualidade do código, sigo princípios como o <strong>SOLID</strong> e pratico o <strong>TDD</strong>. </p>
-                
-                <p> Tenho experiência com <strong>Sass</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Node</strong> e <strong>Express</strong>. Já trabalhei com integração de banco de dados com o <strong>PostgreSQL</strong>. Com consumo e desenvolvimento de <strong>APIs</strong>. Testes de únidade e de integração com <strong>Jest</strong>. Além de versionamento com <strong>Git</strong> e criação de design com <strong>Figma</strong>. </p>
-                
-                <p> Estou sempre focado em escrever códigos escaláveis e desenvolver interfaces pensadas na experiência do usuário. </p>
+                <p>Minha história com programação começou lá em <strong>2015</strong>, quando, por pura diversão, eu tentava criar alguns jogos. Nem imaginava que aquilo se transformaria na minha profissão — e, mais do que isso, em algo que realmente me encanta até hoje.</p>
+
+                <p>Atualmente, trabalho como desenvolvedor full-stack na <a href="https://www.terraviva.agr.br/" target="_blank" rel="noreferrer"><strong>Terra Viva</strong></a>, uma empresa do setor agrícola, onde ajudo a transformar necessidades internas em soluções digitais. Nosso time desenvolve aplicações que vão desde a otimização de processos até a criação de ferramentas para atender demandas completamente novas.</p>
+
+                <p>O que mais me motiva no dia a dia é poder participar de todo o ciclo dos projetos — da idealização e planejamento, passando pelas discussões técnicas, até, claro, o desenvolvimento em si. Ter essa liberdade de explorar, propor soluções e construir de forma colaborativa é algo que valorizo muito.</p>
+
+                <p>Gosto de aprender, de explorar coisas novas e de fazer tudo isso com uma boa xícara de café do lado. Também carrego comigo uma paixão enorme por astronomia, arte e matemática — coisas que, de um jeito ou de outro, sempre acabam cruzando meu caminho.</p>
+
             </div>
 
         </div>
